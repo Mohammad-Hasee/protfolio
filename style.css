@@ -1,0 +1,394 @@
+/* font-family: 'Work Sans', sans-serif;*/
+/* common code starts here */
+:root{
+ --blue:#6c55f9;
+ --heading:#645f88;
+ --paragraph:#8e8aad;
+ --black:rgba(0, 0, 0, 0.9);
+ --white:#ffffff;
+ --primary-color:#F6F5FC;
+ --about-color:#DFE2E7;
+ --primary-font:'Work Sans', sans-serif;
+ --transition:0.5s linear;
+ font-family: var(--primary-font);
+}
+.container{
+    width: 90%;
+    height: 100%;
+    box-sizing: border-box;
+    margin: auto;
+}
+.d_flex{
+    display: flex;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+ul{
+    margin: 0;
+}
+ul li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+/* common code ending here */
+/* hero section starts here */
+.hero{
+    width: 100%;
+    height: 700px;
+    box-sizing: border-box;
+    position: relative;
+}
+.hero_inner{
+    width: 80%;
+    height: 550px;
+    box-sizing: border-box;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    background-color: var(--primary-color);
+}
+.hero_picture{
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+.herooo{
+    width: 80%;
+    height: 80%;
+    box-sizing: border-box;
+    /*border-radius: 50%;*/
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+}
+.hero_picture img{
+    width:"100%"; 
+    height:"100%";
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+}
+.hero_content{
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    padding: 50px;
+    
+}
+.hero_content p{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--black);
+    display: block;
+}
+.hero_content h1{
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--black);
+    display: block;
+}
+.hero_content h2{
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--black);
+    display: block;
+}
+ button{
+    width: 25%;
+    height: 100%;
+    /*margin-top: 30px;*/
+    display: inline-block;
+}
+.social_link{
+    display: flex;
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--black);
+    
+}
+.social_link ul li{
+    padding-left: 20px;
+    font-size: 25px;
+}
+/* hero section ending here */
+/* nav section starts here */
+nav{
+    margin: 20px 0px;
+}
+.navbar_brand a{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--black);
+}
+.navbar_brand a span{
+    color: var(--blue);
+}
+.navbar_nav ul li a.active{
+    color: var(--blue);
+    font-weight: 500;
+}
+.navbar_nav ul li a{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--paragraph);
+    padding: 10px 15px;
+    margin: 0px 10px;
+}
+.navbar_nav ul li a:hover{
+    color: var(--blue);
+    transition: var(--transition);
+    font-weight: 500;
+}
+.nav_inner{
+    justify-content: space-between;
+}
+.navbar_nav ul li:last-child a{
+    color: var(--white);
+    background-color: var(--blue);
+    border-radius: 5px;
+    padding: 10px 40px;
+    transition: var(--transition);
+}
+.navbar_nav ul li:last-child a:hover{
+    background-color: var(--paragraph);
+}
+
+/* nav section ending here */
+/* about me section starts here*/
+.about_me{
+    width: 100%;
+    height: 550px;
+    box-sizing: border-box;
+    background-color: var(--white);
+    position: relative;
+}
+.about_me_inner{
+    width: 100%;
+    height: 500px;
+    box-sizing: border-box;
+    background-color: var(--about-color);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.about_me_header{
+    width: 80%;
+    height: 150px;
+    box-sizing: border-box;
+    background-color: var(--about-color);
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+.about_me_header h1{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--black);
+    font-family: var(--primary-font);
+    letter-spacing: 10px;
+
+}
+.about_me_main{
+    width: 80%;
+    height: 350px;
+    margin: auto;
+    box-sizing: border-box;
+    background-color: var(--about-color);
+}
+.about_me_picture{
+    width: 35%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: rgb(88, 74, 74);
+    float: left;
+    clear: right;
+}
+.about_me_content{
+    width: 65%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: var(--about-color);
+    float: left;
+    clear: right;
+    padding: 20px;
+}
+.about_me_content p{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--black);
+    font-family: var(--primary-font);
+}
+.about_me_places{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    text-align: justify;
+}
+.left_places{
+    width: 40%;
+    height: 100px;
+    box-sizing: border-box;
+}
+.right_places{
+    width: 40%;
+    height: 100px;
+    box-sizing: border-box;
+}
+address{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--black);
+    font-family: var(--primary-font);
+}
+
+/*about me section ending here */
+/* qualification section starts here */
+.school_section{
+    height: 600px;
+    width: 100%;
+    background-color: #FFF4A3;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.school{
+    width: 32%;
+    height: 486px;
+    background-color: #E7E9EB;
+    position: relative;
+    border: 1px solid black;
+    float: left;
+    margin: 10px;
+    top: 40px;
+}
+.school_section h1{
+    letter-spacing: 10px;
+}
+.school_picture{
+    width: 60%;
+    height: 200px;
+    background-color: aqua;
+    position: relative;
+    margin: auto;
+    top: 30px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    margin-top:0px;
+    border: 1px solid black;
+    transition: all 2s;
+}
+.school_paragraph{
+    width: 96%;
+    height: 220px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 40px;
+    border: 1px solid black;
+}
+
+.college{
+    width: 32%;
+    height: 486px;
+    background-color: #E7E9EB;
+    position: relative;
+    border: 1px solid black;
+    overflow: hidden;
+    float: left;
+    margin: 10px;
+    top: 40px;
+}
+.college_picture{
+    width: 60%;
+    height: 200px;
+    background-color: aqua;
+    position: relative;
+    margin: auto;
+    top: 30px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    margin-top:0px;
+    border: 1px solid black;
+    transition: all 2s;
+}
+.college_paragraph{
+    width: 96%;
+    height: 220px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 40px;
+    border: 1px solid black;
+}
+
+.university{
+    width: 32%;
+    height: 486px;
+    background-color: #E7E9EB;
+    position: relative;
+    border: 1px solid black;
+    overflow: hidden;
+    margin: 10px;
+    top: 40px;
+}
+.university_picture{
+    width: 60%;
+    height: 200px;
+    background-color: aqua;
+    position: relative;
+    margin: auto;
+    top: 30px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    margin-top:0px;
+    border: 1px solid black;
+    transition: all 2s;
+}
+.university_paragraph{
+    width: 96%;
+    height: 220px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 40px;
+    border: 1px solid black;
+}
+/* qualificion section ending here */
